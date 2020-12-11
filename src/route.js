@@ -1,7 +1,7 @@
 const pagesHandlers = require("./handlers/pages")
 const getCurrent = require("./handlers/weather")
 
-console.log("test")
+console.log("bonjour")
 
 const initRoutes = (app) => {
   app.get("/", pagesHandlers.home);
