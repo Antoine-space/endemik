@@ -1,0 +1,8 @@
+<%- include("../partials/header", {page: "weather"}) %> 
+<% if (error) { %> 
+    <%- include("../partials/flash/error", {message: error.message, error: error.error}) %> 
+<% } else{ %>
+    <h1>Il fait <%= data.temp %>°C</h1>
+    <h1>A <%= data.loc.name %></h1>
+<% }%>
+<%- include("../partials/footer") %>
